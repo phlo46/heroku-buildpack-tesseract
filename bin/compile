@@ -24,7 +24,7 @@ then
    do
      lang="${array[i]}"
      echo $lang 'training data'
-     unzip $lang.zip -d $INSTALL_DIR_TRAINING_DATA
+     unzip $lang.zip -d $INSTALL_DIR
 
    done
 fi
