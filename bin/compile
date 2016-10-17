@@ -26,7 +26,7 @@ then
      echo $lang 'training data'
      curl https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.$lang.tar.gz \
      	  -o - |
-	 tar -xz  -C $INSTALL_DIR_TRAINING_DATA -f -
+	 tar -x  -C $INSTALL_DIR_TRAINING_DATA -f -
 
    done
 fi
