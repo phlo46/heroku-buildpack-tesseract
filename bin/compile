@@ -10,7 +10,7 @@ INSTALL_DIR_TRAINING_DATA=$BUILD_DIR/vendor/
 TESSERACT_OCR_DIR=${HOME}/vendor/tesseract-ocr
 ENVSCRIPT=$BUILD_DIR/.profile.d/tesseract-ocr.sh
 
-TESSERACT_OCR_LANGUAGES=eng
+TESSERACT_OCR_LANGUAGES=eng, vie
 
 echo "Unpacking Tesseract-OCR binaries"
 mkdir -p $INSTALL_DIR
@@ -24,9 +24,7 @@ then
    do
      lang="${array[i]}"
      echo $lang 'training data'
-     curl https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.$lang.tar.gz \
-     	  -o - |
-	 tar -x  -C $INSTALL_DIR_TRAINING_DATA -f -
+	 tar -xz $lang.tar.gz  -C $INSTALL_DIR_TRAINING_DATA -f -
 
    done
 fi
