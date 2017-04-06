@@ -18,7 +18,7 @@ heroku buildpacks:add https://github.com/lnguyen46/heroku-buildpack-tesseract.gi
 
 # Example:
 
-Here is [simple web app] (https://github.com/lnguyen46/tesseract-with-python-flask) using this buildpack.
+Here is [simple web app](https://github.com/lnguyen46/tesseract-with-python-flask) using this buildpack.
 
 # License
 
